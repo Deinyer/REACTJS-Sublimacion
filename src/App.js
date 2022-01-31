@@ -1,6 +1,8 @@
-import logo from './logo.svg';
+/* import logo from './logo.svg';*/
+import ItemListContainer from '../src/Components/ItemListContainer'
+import NavBar from './Components/NavBar';
 import './App.css';
-
+/*
 function App() {
   return (
     <div className="App">
@@ -22,4 +24,15 @@ function App() {
   );
 }
 
+export default App;*/
+
+function App () {
+  return(
+    <>
+    <NavBar />
+    < ItemListContainer greeting="Hola Mundo"/>
+
+    </>
+  );
+}
 export default App;

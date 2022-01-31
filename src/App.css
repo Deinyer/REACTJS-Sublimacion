@@ -1,3 +1,4 @@
+/*
 .App {
   text-align: center;
 }
@@ -35,4 +36,55 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+
+.barranav {
+ position: relative;
+  background-color: rgb(255, 215, 255);
+  box-shadow: 0px 4px 3px rgb(0, 0, 0,.5);
+
 }
+
+.logomenu{
+
+  width: 6%;
+  margin-top: 1%;
+  margin-bottom: -5%;
+  
+  
+}
+
+.enlaces-menu {
+  display: flex;
+  margin-bottom: 30px;
+  
+}
+.enlaces-menu li {
+  
+  padding: 0 20px;
+  list-style-type: none;
+  transition: 0.3s;
+  margin-left: 190px;
+  margin-bottom: -20;
+  
+}
+
+.pestana{
+  color: aliceblue;
+  background-color: rgb(170, 4, 170);
+  position: fixed;
+  z-index: 1000;
+  top: 40px;
+  box-shadow: 0px 4px 3px rgb(0, 0, 0,.5);
+  text-decoration: none;
+  
+}
+
+.carrito{
+margin-right: -2300px;
+font-size:  large;
+position: absolute;
+margin-top: -80px;
+
+}
+
