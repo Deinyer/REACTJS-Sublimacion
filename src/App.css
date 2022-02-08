@@ -67,7 +67,7 @@
   margin-left: 190px;
   margin-bottom: -20;
   
-}
+};
 
 .pestana{
   color: aliceblue;
@@ -77,14 +77,33 @@
   top: 40px;
   box-shadow: 0px 4px 3px rgb(0, 0, 0,.5);
   text-decoration: none;
-  
-}
+};
 
 .carrito{
 margin-right: -2300px;
 font-size:  large;
 position: absolute;
 margin-top: -80px;
+}
 
+.cantidad{
+  margin-left: 34px;
+  text-align: center;
+  background-color: rgb(255, 215, 255);
+  width: 75px;
+}
+
+.BotonSigno{
+  color: white;
+  background-color: rgb(170, 4, 170);
+  margin-left: 3px;
+  
+}
+
+.BotonSumaArticulo{
+  margin-left: 5px;
+  color: white;
+  background-color: rgb(170, 4, 170);
+  stroke: white; 
 }
 
