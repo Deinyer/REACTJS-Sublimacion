@@ -1,75 +1,28 @@
-/*
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/
-
 .barranav {
- position: relative;
+  position: relative;
   background-color: rgb(255, 215, 255);
-  box-shadow: 0px 4px 3px rgb(0, 0, 0,.5);
-
+  box-shadow: 0px 4px 3px rgb(0, 0, 0, 0.5);
 }
 
-.logomenu{
-
+.logomenu {
   width: 6%;
   margin-top: 1%;
   margin-bottom: -5%;
-  
-  
 }
 
 .enlaces-menu {
   display: flex;
   margin-bottom: 30px;
-  
 }
 .enlaces-menu li {
-  
   padding: 0 20px;
   list-style-type: none;
   transition: 0.3s;
-  margin-left: 190px;
+  margin-left: 170px;
   margin-bottom: -20;
-  
-};
+}
 
-.pestana{
+/* .pestana{
   color: aliceblue;
   background-color: rgb(170, 4, 170);
   position: fixed;
@@ -84,26 +37,65 @@ margin-right: -2300px;
 font-size:  large;
 position: absolute;
 margin-top: -80px;
-}
+} */
 
-.cantidad{
+.cantidad {
   margin-left: 34px;
   text-align: center;
   background-color: rgb(255, 215, 255);
   width: 75px;
 }
 
-.BotonSigno{
+.BotonSigno {
   color: white;
   background-color: rgb(170, 4, 170);
   margin-left: 3px;
-  
 }
 
-.BotonSumaArticulo{
+.BotonSumaArticulo {
   margin-left: 5px;
   color: white;
   background-color: rgb(170, 4, 170);
-  stroke: white; 
+  stroke: white;
 }
+
+.pestana {
+  color: aliceblue;
+  background-color: rgb(170, 4, 170);
+
+  z-index: 1000;
+  top: 40px;
+  box-shadow: 0px 4px 3px rgb(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.carrito {
+  margin-right: -2500px;
+  font-size: large;
+  position: absolute;
+  margin-top: -105px;
+}
+
+.cantidad {
+  margin-left: 34px;
+  text-align: center;
+  background-color: rgb(255, 215, 255);
+  width: 75px;
+}
+
+.products {
+  width: 100%;
+}
+
+.cart {
+  height: 180px;
+  width: 250px;
+  
+}
+
+.cartName {
+  margin-left: 100px;
+  
+}
+
 

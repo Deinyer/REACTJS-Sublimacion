@@ -1,16 +1,35 @@
 import ItemCount from "./ItemCount";
+import { useEffect, useState } from "react";
+import listProducts from "../utils/product";
+import Itemlist from "./ItemList";
 
-const ItemListContainer = ({greeting}) => {
-    return (
+const ItemListContainer = ({ greeting }) => {
+  const [articulos, setArticulos] = useState([]);
+
+  useEffect(() => {
+
+    const customFetch = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(listProducts);
+      }, 3000);
+    });
+    customFetch
+      .then((res) => {
+        setArticulos(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+  console.log(articulos)
+  return (
     <div>
-        {greeting}
-        <hr />
-        <ItemCount />
-
+      {greeting}
+      <hr />
+      <Itemlist articulos={articulos} />
+      <ItemCount />
     </div>
-      
-    );
-  };
+  );
+};
 
-  export default ItemListContainer;
-  
+export default ItemListContainer;
