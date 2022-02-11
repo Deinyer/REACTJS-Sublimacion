@@ -2,6 +2,10 @@
 import ItemListContainer from '../src/Components/ItemListContainer'
 import NavBar from './Components/NavBar';
 import './App.css';
+// import ItemDetail from './Components/ItemDetail';
+// import detail from './Components/details';
+
+
 /*
 function App() {
   return (
@@ -31,7 +35,7 @@ function App () {
     <>
     <NavBar />
     < ItemListContainer greeting="Hola Mundo"/>
-
+    
     </>
   );
 }

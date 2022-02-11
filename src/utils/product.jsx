@@ -6,7 +6,6 @@ const listProducts = [
     cost: 450,
     descrip: "",
     vista: require("../imagen/taza.png"),
-    vista1: require("../imagen/taza.png"),
   },
   {
     id: 2,
