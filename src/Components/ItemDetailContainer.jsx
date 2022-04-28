@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import detailProducts from "../utils/productDetails";
+import detailProducts from "../utils/DetailsProducts";
 
 
 const ItemDetailContainer = () => {

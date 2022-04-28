@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ItemCount = ({ stock, initial, onAdd }) => {
-  let [cantidad, setCantidad] = useState(0);
+  let [cantidad, setCantidad] = useState(initial);
 
   const increment = () => {
     if (cantidad <= stock) {
@@ -9,7 +9,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     }
   };
   const decrement = () => {
-    if (cantidad >= initial) {
+    if (cantidad > initial) {
       setCantidad(cantidad - 1);
     }
   };
@@ -19,7 +19,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
 
   return (
     <>
-      <div>
+      <div className="contador">
         <p className="cantidad">{cantidad}</p>
         <button className="BotonSigno" onClick={decrement}>
           -

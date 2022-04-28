@@ -2,16 +2,16 @@ import ItemDetail from "./ItemDetail";
 
 
 
-const detail = ({detalle}) => {
+const Detail = ({detalle}) => {
     return (
       <div>
         {detalle.length > 0 ? (
-          detalle.map((productDetails, id) => (
+          detalle.map((DetailProducts, id) => (
             <ItemDetail
               key={id}
-              name={productDetails.name}
-              descript={productDetails.description}
-              view={productDetails.imagen}
+              name={DetailProducts.name}
+              descript={DetailProducts.description}
+              view={DetailProducts.imagen}
             />
           ))
         ) : (
@@ -21,4 +21,4 @@ const detail = ({detalle}) => {
     );
   };
 
-  export default detail;
+  export default Detail;

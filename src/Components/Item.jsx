@@ -1,14 +1,18 @@
 
-const Item = ({name,view,descript}) =>{
+const Item = ({name,view,descript,cost,stock}) =>{
 return (
   
-  <article className="cart">
+  
     <figure className="cartName">
-      {<p>{name}</p>}
+      <p className="detall">{name}</p>
       <img className="products" src={view} alt={name}/>
-      <p>{descript}</p>
+      <p className="detall1">{stock}</p>
+      <p className="detall2">{cost}</p>
+       <figcaption className="figcap"> 
+        <p className="detall">{descript}</p>
+       </figcaption>
     </figure>
-  </article>
+  
   
 )}
 

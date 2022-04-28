@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import listProducts from "../utils/product";
 import Itemlist from "./ItemList";
 
+
+
 const ItemListContainer = ({ greeting }) => {
   const [articulos, setArticulos] = useState([]);
 
@@ -26,8 +28,10 @@ const ItemListContainer = ({ greeting }) => {
     <div>
       {greeting}
       <hr />
+      
       <Itemlist articulos={articulos} />
       <ItemCount  stock={5} initial={1} />
+      
     </div>
   );
 };

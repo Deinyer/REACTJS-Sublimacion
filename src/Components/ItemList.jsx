@@ -11,6 +11,8 @@ const Itemlist = ({articulos}) => {
             name={listProducts.name}
             descript={listProducts.descrip}
             view={listProducts.vista}
+            cost={listProducts.cost}
+            stock={listProducts.stock}
           />
         ))
       ) : (

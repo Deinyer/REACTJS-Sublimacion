@@ -46,6 +46,13 @@ margin-top: -80px;
   width: 75px;
 }
 
+.cantidad {
+  margin-left: 18px;
+  text-align: center;
+  background-color: rgb(255, 215, 255);
+  width: 125px;
+}
+
 .BotonSigno {
   color: white;
   background-color: rgb(170, 4, 170);
@@ -57,6 +64,11 @@ margin-top: -80px;
   color: white;
   background-color: rgb(170, 4, 170);
   stroke: white;
+}
+.contador{
+  display: inline-block;
+  border: 1px solid ;
+  
 }
 
 .pestana {
@@ -76,26 +88,46 @@ margin-top: -80px;
   margin-top: -105px;
 }
 
-.cantidad {
-  margin-left: 34px;
-  text-align: center;
-  background-color: rgb(255, 215, 255);
-  width: 75px;
-}
 
 .products {
-  width: 100%;
+width: 180px;
+height: 180px;
+position: relative;
+flex-direction: column;
+justify-content: space-around;
+
 }
 
-.cart {
-  height: 180px;
-  width: 250px;
-  
+.figcap{
+
+  background-color:violet ;
+
+
 }
+
 
 .cartName {
-  margin-left: 100px;
+  border: 1px solid black;
   
+
+  display: inline-block;
+  background-color: rgb(255,215,255);
+  
+}
+
+.detall{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.detall1{
+  background-color: rgb(223, 223, 223);
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.detall2{
+  background-color: #FFEB1F;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
