@@ -67,7 +67,7 @@ margin-top: -80px;
 }
 .contador{
   display: inline-block;
-  border: 1px solid ;
+  /*border: 1px solid ;*/
   
 }
 
@@ -130,4 +130,20 @@ justify-content: space-around;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.detalleProducto{
+display: inline-block;
+background-color: lightgray;
+width: 199px;
+height: 363px;
+}
+
+
+
+.detail{
+margin-right: 250px;
+margin-top: 60px;  
+display: flex;
+justify-content: center;
+
+}
 

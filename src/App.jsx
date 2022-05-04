@@ -1,7 +1,9 @@
 /* import logo from './logo.svg';*/
-import ItemListContainer from '../src/Components/ItemListContainer'
+/*import ItemListContainer from '../src/Components/ItemListContainer'*/
 import NavBar from './Components/NavBar';
 import './App.css';
+import ItemDetailContainer from './Components/ItemDetailContainer';
+
 
 
 
@@ -37,9 +39,11 @@ function App () {
   return(
     <>
     <NavBar />
-     < ItemListContainer greeting="Hola Mundo"/> 
-     
-    
+     <ItemDetailContainer/>
+   
+    {/*< ItemListContainer greeting="Hola Mundo"/>*/}
+
+  
     </>
   );
 }
