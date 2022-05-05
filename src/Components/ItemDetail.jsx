@@ -47,10 +47,10 @@ import ItemCount from './ItemCount';
               <p className="detall">{item?.descrip}</p>
             </figcaption>
           <p className="detall2">{ item?.cost }</p>
-          <p className="detall1">{ item?.stock }</p>
+          <p className="detall1">{ item?.stocks }</p>
           <hr/> 
           <p className="detall">Hechas de Ceramica</p>     
-          <ItemCount initial={0} stock={5} onAdd={() => {}} />
+          <ItemCount initial={0} stock={item?.stock} onAdd={() => {}} />
            </div>       
               
       </div>

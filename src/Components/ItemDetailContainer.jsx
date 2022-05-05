@@ -5,6 +5,7 @@ import ItemDetail from "./ItemDetail";
 
 
 
+
 /*const ItemDetailContainer = () => {
     const [detalles, setDetalles] = useState([]);
   
@@ -44,11 +45,21 @@ import ItemDetail from "./ItemDetail";
           {
             id: 1,
             name: "Tazas",
-            stock: "Disponibles: 5",
+            stocks: "Disponibles: 4",
+            stock:4, 
             cost: "$450",
             descrip: "Para Personalizar",
             vista: require("../imagen/taza.png"),
-          }, 
+          },
+          {
+            id: 1,
+            name: "Tazas",
+            stocks: "Disponibles: 4",
+            stock:4, 
+            cost: "$450",
+            descrip: "Para Personalizar",
+            vista: require("../imagen/remera.png"),
+          },  
         ];
         setTimeout(() => {
             resolve(item[0]);
@@ -60,8 +71,11 @@ import ItemDetail from "./ItemDetail";
 function ItemDetailContainer() {
     const [item, setItem] = useState({});
 
+    
+
 
     useEffect(() => {
+      
         getItem()
             .then(res => {
                 setItem(res);
