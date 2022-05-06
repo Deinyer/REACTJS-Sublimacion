@@ -8,8 +8,10 @@ const Itemlist = ({articulos}) => {
         articulos.map((listProducts, id) => (
           <Item
             key={id}
+            id={listProducts.id}
             name={listProducts.name}
             descript={listProducts.descrip}
+            disp={listProducts.disp}
             view={listProducts.vista}
             cost={listProducts.cost}
             stock={listProducts.stock}

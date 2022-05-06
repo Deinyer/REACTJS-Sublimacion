@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 
 
-const Item = ({id, name,view,descript,cost,stock}) =>{
+
+const Item = ({ id,name,view,descript,cost,stock,disp}) =>{
 return (
   
   
@@ -14,7 +15,7 @@ return (
       <p className="detall">{descript}</p>
       </figcaption>
       <p className="detall2">{cost}</p>
-      <p className="detall1">{stock}</p>
+      <p className="detall1">{disp }{stock}</p>
       
       <Link to={'/Item/'+ id }>
       <button>Ver Detalle</button>
