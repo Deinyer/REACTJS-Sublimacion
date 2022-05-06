@@ -12,13 +12,13 @@ const NavBar = () => {
           <a className="pestana" href="/">Inicio</a>
         </li>
         <li>
-          <a className="pestana" href="/">Productos</a>
+          <a className="pestana" href="Productos">Productos</a>
         </li>
         <li>
-          <a className="pestana" href="/">Encargos</a>
+          <a className="pestana" href="Encargos">Encargos</a>
           </li>
         <li>
-          <a className="pestana" href="/">Cotización</a>
+          <a className="pestana" href="Cotización">Cotización</a>
         </li>
       </ul>
        <CartWidget />
