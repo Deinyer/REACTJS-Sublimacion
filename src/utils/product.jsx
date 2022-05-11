@@ -17,7 +17,7 @@ const listProducts = [
     cost: "$190",
     descrip: "Para Personalizar",
     vista: require("../imagen/remera.png"),
-    productos: "Productos",
+    productos: "Encargos",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const listProducts = [
     cost: "$1800",
     descrip: "Para Personalizar",
     vista: require("../imagen/buzo.png"),
-    productos: "Productos",
+    productos: "Encargos",
   },
   {
     id: 5,
@@ -48,6 +48,16 @@ const listProducts = [
     descrip: "Para Personalizar",
     vista: require("../imagen/llavero.png"),
     productos: "Productos",
+  },
+  {
+    id: 6,
+    name: "Productos varios",
+    disp:"Disponibles:",
+    stock: "consultar",
+    cost: "$300/$1800",
+    descrip: "Todos los Medios de pago",
+    vista: require("../imagen/varios.jpg"),
+    productos: "Cotización",
   },
 ];
 

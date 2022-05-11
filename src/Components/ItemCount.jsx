@@ -14,7 +14,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     }
   };
   const contador = () => {
-    alert("Agrego " + cantidad + " de este  artculo");
+    console.log("Agrego " + cantidad + " de este  articulo");
   };
 
   return (

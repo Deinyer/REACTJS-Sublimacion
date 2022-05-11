@@ -52,6 +52,16 @@ import { useParams } from 'react-router-dom';
           descrip: "Para Personalizar",
           vista: require("../imagen/llavero.png"),
         },
+        {
+          id: 6,
+          name: "Productos varios",
+          disp:"Disponibles:",
+          stock: "consultar",
+          cost: "$300/$1800",
+          descrip: "Todos los Medios de pago",
+          vista: require("../imagen/varios.jpg"),
+          productos: "Cotización",
+        },
           
         ];
         const item = listProducts.filter(item => item.id === parseInt(id));

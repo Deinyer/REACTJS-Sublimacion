@@ -8,14 +8,14 @@ import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({ greeting }) => {
   const [articulos, setArticulos] = useState([]);
-  const {Productos} = useParams
+  const {ProductosId} = useParams();
 
   useEffect(() => {
-    console.log(Productos)
+    console.log(ProductosId)
     const customFetch = new Promise((resolve, reject) => {
       
       setTimeout(() => {
-        const productsFiltered = Productos ? listProducts.filter(p => p.productos === Productos) : listProducts;
+        const productsFiltered = ProductosId ? listProducts.filter(p => p.productos === ProductosId) : listProducts;
         resolve(productsFiltered);
       }, 3000);
     });
@@ -26,7 +26,7 @@ const ItemListContainer = ({ greeting }) => {
       .catch((error) => {
         console.log(error);
       });
-  }, [Productos]);
+  }, [ProductosId]);
   console.log(articulos)
   return (
     <div>
