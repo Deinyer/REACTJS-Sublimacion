@@ -10,43 +10,43 @@ const CartContext = createContext({
 });
 
 export const CartContextProvider = ({ children }) => {
-    const [listProducts, setlistProducts] = useState([]);
+    const [productList, setProductList] = useState([]);
 
     const addProduct = (product) => {
-        const repeatedItemIndex = listProducts.findIndex(item => item.id === product.id)
+        const repeatedItemIndex = productList.findIndex(item => item.id === product.id)
         if (repeatedItemIndex !== -1) {
-            setlistProducts(listProducts.map(p => p.id === product.id ? {...p, quantity: p.quantity + product.quantity} : p));
+            setProductList(productList.map(p => p.id === product.id ? {...p, quantity: p.quantity + product.quantity} : p));
         } else {
-            setlistProducts([product, ...listProducts]);
+            setProductList([product, ...productList]);
         }
     }
 
     const removeProduct = (id) => {
-        const indexToRemove = listProducts.findIndex(item => item.id === id);
-        if (listProducts[indexToRemove].quantity === 1) {
-            setlistProducts(listProducts.filter(i => i.id !== id))
+        const indexToRemove = productList.findIndex(item => item.id === id);
+        if (productList[indexToRemove].quantity === 1) {
+            setProductList(productList.filter(i => i.id !== id))
         } else {
-            setlistProducts(listProducts.map(p => p.id === id ? {...p, quantity: p.quantity - 1} : p));
+            setProductList(productList.map(p => p.id === id ? {...p, quantity: p.quantity - 1} : p));
         }
     }
 
     const clear = () => {
-        setlistProducts([]);
+        setProductList([]);
     }
 
     const isInCart = (id) => {
-        return listProducts.map(p => p.id).indexOf(id) !== -1;
+        return productList.map(p => p.id).indexOf(id) !== -1;
     }
 
     const getCartQuantity = () => {
-        return listProducts.reduce((total, value) => {
+        return productList.reduce((total, value) => {
             return total + value.quantity
         }, 0)
     }
   
     return (
         <CartContext.Provider value={{
-            products: listProducts,
+            products: productList,
             addProduct,
             removeProduct,
             clear,

@@ -84,7 +84,7 @@ function ItemDetailContainer() {
             })
             .catch(err => {
                 console.log(err);
-                alert('Ocurrio un error, revisar la consola!');
+                alert('error');
             });
     }, [Id]);
 
